@@ -1,4 +1,4 @@
-# React + Vite
+# Wild Harmony
 
 Primera Preentrega de proyecto de ReactJS
 
