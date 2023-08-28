@@ -1,6 +1,6 @@
 import styles from "./ItemListContainer.module.css";
 
-const ItemListContain = ({ greeting }) => {
+const ItemListContainer = ({ greeting }) => {
     return (
         <div className= {`${styles.ItemListContainer} container-fluid`}>
             <div className="d-flex justify-content-center align-items-center vh-100">
@@ -10,4 +10,4 @@ const ItemListContain = ({ greeting }) => {
     )
 }
 
-export default ItemListContain;
+export default ItemListContainer;
