@@ -1,3 +1,4 @@
+import { Link, NavLink } from 'react-router-dom'
 import logoColor from "../../assets/wild-harmony-logo-color.png"
 import CartWidget from "../CartWidget/CartWidget";
 import styles from "./Navbar.module.css";
@@ -8,19 +9,19 @@ const Navbar = () => {
             <div className="container-fluid">
                 {/* Brand */}
                 <div className="navbar-brand">
-                    <a href="#"><img src={logoColor} alt="Wild Harmony Logo a color" style={{ width : '140px', height : 'auto'}}/></a>
+                    <NavLink to="/"> <img src={logoColor} alt="Wild Harmony Logo a color" style={{ width : '140px', height : 'auto'}}/> </NavLink>
                 </div>
 
                 {/* Links */}
                 <ul className="navbar-nav">
                     <li className="nav-item">
-                        <a className="nav-link" href="#">Maquillaje</a>
+                        <NavLink to="/category/maquillaje" className="nav-link">Maquillaje</NavLink>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="#">Cuidado Facial</a>
+                        <NavLink to="/category/cuidado-facial" className="nav-link">Cuidado Facial</NavLink>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="#">Quienes somos</a>
+                        <NavLink to="/category/cuidado-corporal" className="nav-link">Cuidado Corporal</NavLink>
                     </li>
                 </ul>
 

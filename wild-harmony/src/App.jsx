@@ -6,6 +6,10 @@ import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailCont
 function App() {
   return (
     <div>
+
+      {/* Navbar */}
+      <Navbar />
+
       {/* Navegabilidad */}
       <Routes>
         <Route path="/" element={<ItemListContainer />} />
@@ -13,14 +17,12 @@ function App() {
         <Route path="/item/:id" element={<ItemDetailContainer />} />
       </Routes>
 
-      {/* Navbar */}
-      <Navbar />
-
       {/* ItemListContainer */}
-      <ItemListContainer greeting={ "Hola Mundo!" } />
+      {/* <ItemListContainer /> */}
 
       {/* ItemDetailContainer */}
-      <ItemDetailContainer />
+      {/* <ItemDetailContainer /> */}
+      
     </div>
   )
 }
