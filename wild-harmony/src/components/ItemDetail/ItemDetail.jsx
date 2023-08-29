@@ -2,8 +2,12 @@ import PropTypes from "prop-types";
 
 const ItemDetail = ({ item, isLoading }) => {
   if (isLoading) {
-    return <h3>Loading...</h3>
-  }
+    return (
+      <div className="text-center">
+        <h3 className="text-danger p-3">Loading...</h3>
+        <div className="spinner-grow text-danger" role="status"></div>
+      </div>
+  )}
   
   if (!item) {
     return <h4>Error 404. El producto no existe</h4>;

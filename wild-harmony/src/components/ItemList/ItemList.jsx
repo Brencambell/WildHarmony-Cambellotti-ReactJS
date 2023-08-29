@@ -5,8 +5,12 @@ import { Link } from 'react-router-dom'
 
 const ItemList = ({ items, isLoading }) => {
   if (isLoading) {
-    return <h2>Loading...</h2>
-  }
+    return (
+      <div className="text-center">
+        <h3 className="text-danger p-3">Loading...</h3>
+        <div className="spinner-grow text-danger" role="status"></div>
+      </div>
+  )}
 
   return (
     <div className= "row row-cols-1 row-cols-md-3 m-3">
