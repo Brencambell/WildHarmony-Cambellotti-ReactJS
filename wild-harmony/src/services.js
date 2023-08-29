@@ -175,7 +175,7 @@ const products = [
             } else {
                 reject ("El producto no existe");
             }
-        }, 3000);
+        }, 1000);
     });
   };
 
@@ -190,7 +190,7 @@ const products = [
 
             resolve (productsFiltered);
 
-        }, 3000);
+        }, 1000);
     });
   };
 
