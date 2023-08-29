@@ -6,16 +6,25 @@ import ItemList from "../ItemList/ItemList"; //componente de presentacion
 
 const ItemListContainer = () => {
     const [items, setItems] = useState ([]);
-    const { id } = useParams ();
+    const [isLoading, setIsLoading] = useState (true);
+    const { categoryId } = useParams ();
     
     useEffect (() => {
-        getProducts (id)
+        setIsLoading(true);
+
+        getProducts (categoryId)
         .then ((response) => {
             setItems(response);
+        })
+        .catch (() => {
+            setItems(null);
+        })
+        .finally (() => {
+            setIsLoading (false);
         });
-    }, [id]);
+    }, [categoryId]);
     
-    return <ItemList items={items} />;
+    return <ItemList items={items} isLoading={isLoading} />;
 };
 
 export default ItemListContainer;

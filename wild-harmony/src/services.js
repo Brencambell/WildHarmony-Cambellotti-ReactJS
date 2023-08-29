@@ -1,6 +1,6 @@
 const products = [
     {
-      id: 1,
+      id: "1",
       image: 'url-imagen-1',
       category: 'maquillaje',
       name: 'Rubor Orgánico',
@@ -8,7 +8,7 @@ const products = [
       price: 12.99,
     },
     {
-      id: 2,
+      id: "2",
       image: 'url-imagen-2',
       category: 'cuidado facial',
       name: 'Limpiador Facial de Aloe Vera',
@@ -16,7 +16,7 @@ const products = [
       price: 18.75,
     },
     {
-      id: 3,
+      id: "3",
       image: 'url-imagen-3',
       category: 'cuidado corporal',
       name: 'Crema Corporal de Coco',
@@ -24,7 +24,7 @@ const products = [
       price: 22.50,
     },
     {
-      id: 4,
+      id: "4",
       image: 'url-imagen-4',
       category: 'maquillaje',
       name: 'Barra de Labios Natural',
@@ -32,7 +32,7 @@ const products = [
       price: 14.99,
     },
     {
-      id: 5,
+      id: "5",
       image: 'url-imagen-5',
       category: 'cuidado facial',
       name: 'Mascarilla de Arcilla',
@@ -40,7 +40,7 @@ const products = [
       price: 27.00,
     },
     {
-      id: 6,
+      id: "6",
       image: 'url-imagen-6',
       category: 'cuidado corporal',
       name: 'Aceite de Masaje Relajante',
@@ -48,7 +48,7 @@ const products = [
       price: 19.99,
     },
     {
-      id: 7,
+      id: "7",
       image: 'url-imagen-7',
       category: 'maquillaje',
       name: 'Sombra de Ojos Mineral',
@@ -56,7 +56,7 @@ const products = [
       price: 10.50,
     },
     {
-      id: 8,
+      id: "8",
       image: 'url-imagen-8',
       category: 'cuidado facial',
       name: 'Tónico Facial de Rosas',
@@ -64,7 +64,7 @@ const products = [
       price: 15.25,
     },
     {
-      id: 9,
+      id: "9",
       image: 'url-imagen-9',
       category: 'cuidado corporal',
       name: 'Exfoliante Corporal de Café',
@@ -72,7 +72,7 @@ const products = [
       price: 28.00,
     },
     {
-      id: 10,
+      id: "10",
       image: 'url-imagen-10',
       category: 'maquillaje',
       name: 'Pintalabios Mate',
@@ -80,7 +80,7 @@ const products = [
       price: 13.49,
     },
     {
-      id: 11,
+      id: "11",
       image: 'url-imagen-11',
       category: 'cuidado facial',
       name: 'Suero de Ácido Hialurónico',
@@ -88,7 +88,7 @@ const products = [
       price: 32.99,
     },
     {
-      id: 12,
+      id: "12",
       image: 'url-imagen-12',
       category: 'cuidado corporal',
       name: 'Loción Corporal de Vainilla',
@@ -96,7 +96,7 @@ const products = [
       price: 21.75,
     },
     {
-      id: 13,
+      id: "13",
       image: 'url-imagen-13',
       category: 'maquillaje',
       name: 'Máscara de Pestañas Natural',
@@ -104,7 +104,7 @@ const products = [
       price: 15.99,
     },
     {
-      id: 14,
+      id: "14",
       image: 'url-imagen-14',
       category: 'cuidado facial',
       name: 'Aceite Limpiador de Manzanilla',
@@ -112,7 +112,7 @@ const products = [
       price: 24.50,
     },
     {
-      id: 15,
+      id: "15",
       image: 'url-imagen-15',
       category: 'cuidado corporal',
       name: 'Bálsamo Labial de Menta',
@@ -120,7 +120,7 @@ const products = [
       price: 7.99,
     },
     {
-      id: 16,
+      id: "16",
       image: 'url-imagen-16',
       category: 'maquillaje',
       name: 'Polvo Compacto Mineral',
@@ -128,7 +128,7 @@ const products = [
       price: 19.25,
     },
     {
-      id: 17,
+      id: "17",
       image: 'url-imagen-17',
       category: 'cuidado facial',
       name: 'Crema Antiarrugas de Camelia',
@@ -136,7 +136,7 @@ const products = [
       price: 39.99,
     },
     {
-      id: 18,
+      id: "18",
       image: 'url-imagen-18',
       category: 'cuidado corporal',
       name: 'Aceite Corporal de Lavanda',
@@ -144,7 +144,7 @@ const products = [
       price: 26.50,
     },
     {
-      id: 19,
+      id: "19",
       image: 'url-imagen-19',
       category: 'maquillaje',
       name: 'Esmalte de Uñas Libre de Químicos',
@@ -152,7 +152,7 @@ const products = [
       price: 9.75,
     },
     {
-      id: 20,
+      id: "20",
       image: 'url-imagen-20',
       category: 'cuidado facial',
       name: 'Crema Hidratante de Rosa Mosqueta',

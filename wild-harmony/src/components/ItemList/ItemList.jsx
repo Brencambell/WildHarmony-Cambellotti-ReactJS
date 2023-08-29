@@ -3,7 +3,11 @@ import propTypes from "prop-types";
 import { Link } from 'react-router-dom'
 // import styles from "./ItemList.module.css";
 
-const ItemList = ({ items }) => {
+const ItemList = ({ items, isLoading }) => {
+  if (isLoading) {
+    return <h2>Loading...</h2>
+  }
+
   return (
     <div className= "row row-cols-1 row-cols-md-3 m-3">
       {/* <h1 className="col-12 mb-4">ItemList</h1> */}
@@ -33,6 +37,7 @@ const ItemList = ({ items }) => {
 
 ItemList.propTypes = {
   items: propTypes.array.isRequired,
+  isLoading: propTypes.bool,
 };
 
 export default ItemList

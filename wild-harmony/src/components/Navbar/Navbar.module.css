@@ -3,3 +3,15 @@
     font-family: 'Barlow-Thin', sans-serif;
     font-size: 1.4rem;
 }
+
+/* Estilos para todos los NavLink */
+NavLink {
+    color: red;
+    text-decoration: none;
+  }
+  
+  /* O usando el selector <a> */
+  a.NavLink {
+    color: red;
+    text-decoration: none;
+  }

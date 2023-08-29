@@ -9,13 +9,13 @@ const Navbar = () => {
             <div className="container-fluid">
                 {/* Brand */}
                 <div className="navbar-brand">
-                    <NavLink to="/"> <img src={logoColor} alt="Wild Harmony Logo a color" style={{ width : '140px', height : 'auto'}}/> </NavLink>
+                    <Link to="/"> <img src={logoColor} alt="Wild Harmony Logo a color" style={{ width : '140px', height : 'auto'}}/> </Link>
                 </div>
 
                 {/* Links */}
                 <ul className="navbar-nav">
                     <li className="nav-item">
-                        <NavLink to="/category/maquillaje" className="nav-link">Maquillaje</NavLink>
+                        <NavLink to="/category/maquillaje" className={({ isActive, isPending }) => isPending ? "pending" : isActive ? "active" : "" } >Maquillaje</NavLink>
                     </li>
                     <li className="nav-item">
                         <NavLink to="/category/cuidado facial" className="nav-link">Cuidado Facial</NavLink>
