@@ -22,7 +22,7 @@ const ItemDetail = ({ item, isLoading }) => {
           className="card-img-top img-fluid" 
           alt={item.name} />
           <div className="card-body">
-            <h5 className="card-title">{item.name}</h5>
+            <h4 className="card-title">{item.name}</h4>
             <p className="card-text">{item.description}</p>
             <p className="card-text">{item.category}</p>
             <p className="card-text">€{item.price}</p>
