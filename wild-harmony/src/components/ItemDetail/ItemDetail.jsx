@@ -14,10 +14,21 @@ const ItemDetail = ({ item, isLoading }) => {
   }
 
   return (
-    <div>
-      <h1>{item.name}</h1>
-      <p>{item.description}</p>
-      <p>€{item.price}</p>
+    <div className="row justify-content-center p-3">
+      <div className="col-md-6">
+        <div className="card mb-3">
+          <img 
+          src={`https://picsum.photos/400/300?random=${item.id}`} 
+          className="card-img-top img-fluid" 
+          alt={item.name} />
+          <div className="card-body">
+            <h5 className="card-title">{item.name}</h5>
+            <p className="card-text">{item.description}</p>
+            <p className="card-text">{item.category}</p>
+            <p className="card-text">€{item.price}</p>
+          </div>
+        </div>
+      </div>
     </div>
   )
 };
