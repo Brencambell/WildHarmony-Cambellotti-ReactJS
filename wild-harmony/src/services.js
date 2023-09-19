@@ -1,4 +1,4 @@
-const products = [
+export const products = [
     {
       id: "1",
       image: 'url-imagen-1',
@@ -6,6 +6,7 @@ const products = [
       name: 'Rubor Orgánico',
       description: 'Añade un toque de color natural a tus mejillas.',
       price: 12.99,
+      stock: 4,
     },
     {
       id: "2",
@@ -14,6 +15,7 @@ const products = [
       name: 'Limpiador Facial de Aloe Vera',
       description: 'Limpia suavemente mientras hidrata tu piel.',
       price: 18.75,
+      stock: 5,
     },
     {
       id: "3",
@@ -22,6 +24,7 @@ const products = [
       name: 'Crema Corporal de Coco',
       description: 'Hidratación intensa con aroma a coco.',
       price: 22.50,
+      stock: 6,
     },
     {
       id: "4",
@@ -30,6 +33,7 @@ const products = [
       name: 'Barra de Labios Natural',
       description: 'Color duradero y cuidado para tus labios.',
       price: 14.99,
+      stock: 7,
     },
     {
       id: "5",
@@ -38,6 +42,7 @@ const products = [
       name: 'Mascarilla de Arcilla',
       description: 'Purifica y revitaliza tu piel con arcilla natural.',
       price: 27.00,
+      stock: 4,
     },
     {
       id: "6",
@@ -46,6 +51,7 @@ const products = [
       name: 'Aceite de Masaje Relajante',
       description: 'Relaja cuerpo y mente con una mezcla de aceites esenciales.',
       price: 19.99,
+      stock: 5,
     },
     {
       id: "7",
@@ -54,6 +60,7 @@ const products = [
       name: 'Sombra de Ojos Mineral',
       description: 'Colores vibrantes y naturales para tus párpados.',
       price: 10.50,
+      stock: 6,
     },
     {
       id: "8",
@@ -62,6 +69,7 @@ const products = [
       name: 'Tónico Facial de Rosas',
       description: 'Refresca y equilibra tu piel con agua de rosas.',
       price: 15.25,
+      stock: 6,
     },
     {
       id: "9",
@@ -70,6 +78,7 @@ const products = [
       name: 'Exfoliante Corporal de Café',
       description: 'Elimina células muertas y deja la piel suave con café orgánico.',
       price: 28.00,
+      stock: 7,
     },
     {
       id: "10",
@@ -78,6 +87,7 @@ const products = [
       name: 'Pintalabios Mate',
       description: 'Acabado mate y colores intensos para tus labios.',
       price: 13.49,
+      stock: 4,
     },
     {
       id: "11",
@@ -86,6 +96,7 @@ const products = [
       name: 'Suero de Ácido Hialurónico',
       description: 'Hidratación profunda y reducción de líneas finas.',
       price: 32.99,
+      stock: 5,
     },
     {
       id: "12",
@@ -94,6 +105,7 @@ const products = [
       name: 'Loción Corporal de Vainilla',
       description: 'Hidratación con fragancia suave de vainilla.',
       price: 21.75,
+      stock: 6,
     },
     {
       id: "13",
@@ -102,6 +114,7 @@ const products = [
       name: 'Máscara de Pestañas Natural',
       description: 'Volumen y longitud sin químicos agresivos.',
       price: 15.99,
+      stock: 7,
     },
     {
       id: "14",
@@ -110,6 +123,7 @@ const products = [
       name: 'Aceite Limpiador de Manzanilla',
       description: 'Elimina suavemente el maquillaje y las impurezas.',
       price: 24.50,
+      stock: 4,
     },
     {
       id: "15",
@@ -118,6 +132,7 @@ const products = [
       name: 'Bálsamo Labial de Menta',
       description: 'Hidratación y frescura para tus labios con aroma a menta.',
       price: 7.99,
+      stock: 5,
     },
     {
       id: "16",
@@ -126,6 +141,7 @@ const products = [
       name: 'Polvo Compacto Mineral',
       description: 'Acabado mate y natural para tu piel.',
       price: 19.25,
+      stock: 6,
     },
     {
       id: "17",
@@ -134,6 +150,7 @@ const products = [
       name: 'Crema Antiarrugas de Camelia',
       description: 'Combate los signos del envejecimiento con camelia.',
       price: 39.99,
+      stock: 7,
     },
     {
       id: "18",
@@ -142,6 +159,7 @@ const products = [
       name: 'Aceite Corporal de Lavanda',
       description: 'Relajación y nutrición con aroma a lavanda.',
       price: 26.50,
+      stock: 4,
     },
     {
       id: "19",
@@ -150,6 +168,7 @@ const products = [
       name: 'Esmalte de Uñas Libre de Químicos',
       description: 'Colores vibrantes y duraderos sin ingredientes tóxicos.',
       price: 9.75,
+      stock: 5,
     },
     {
       id: "20",
@@ -158,10 +177,11 @@ const products = [
       name: 'Crema Hidratante de Rosa Mosqueta',
       description: 'Hidratación profunda y restauración con aceite de rosa mosqueta.',
       price: 28.99,
+      stock: 6,
     },
   ];
 
-  //getProduct > recibe un id y nis devuelve un porducto. Funcion que retorna una promesa
+  //getProduct > recibe un id y nos devuelve un porducto. Funcion que retorna una promesa
   export const getProduct = (id) => {
     return new Promise((resolve, reject) => {
         setTimeout (() => {

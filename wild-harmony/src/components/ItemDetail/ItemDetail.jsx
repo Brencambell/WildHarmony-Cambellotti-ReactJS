@@ -27,7 +27,8 @@ const ItemDetail = ({ item, isLoading }) => {
             <p className="card-text">{item.description}</p>
             <p className="card-text">{item.category}</p>
             <p className="card-text">€{item.price}</p>
-            <ItemCountContainer />
+            <p className="card-text">Stock: {item.stock}</p>
+            <ItemCountContainer stock={item.stock} />
           </div>
         </div>
       </div>
