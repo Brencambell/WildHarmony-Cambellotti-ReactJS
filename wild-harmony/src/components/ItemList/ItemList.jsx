@@ -13,7 +13,7 @@ const ItemList = ({ items, isLoading }) => {
   )}
 
   return (
-    <div className= "row row-cols-1 row-cols-md-3 m-3">
+    <div className= "row row-cols-1 row-cols-lg-4 m-3">
       {/* <h1 className="col-12 mb-4">ItemList</h1> */}
 
       {items.map((item) => (

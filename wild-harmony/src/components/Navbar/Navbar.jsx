@@ -12,7 +12,6 @@ const Navbar = () => {
                     <Link to="/"> <img src={logoColor} alt="Wild Harmony Logo a color" style={{ width : '140px', height : 'auto'}}/> </Link>
                 </div>
 
-                {/* Links */}
                 <ul className="navbar-nav">
                     <li className="nav-item">
                         <NavLink to="/category/maquillaje" className="nav-link">Maquillaje</NavLink>
@@ -25,7 +24,6 @@ const Navbar = () => {
                     </li>
                 </ul>
 
-                {/* CartWidget */}
                 <CartWidget />
             </div>
         </nav>
