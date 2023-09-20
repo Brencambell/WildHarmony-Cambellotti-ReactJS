@@ -2,6 +2,7 @@ import { Routes, Route } from "react-router-dom";//con estos componentes podremo
 import Navbar from "./components/Navbar/Navbar";
 import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
 import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailContainer";
+//import Checkout from "./components/Checkout/Checkout";
 
 function App() {
   return (
@@ -13,6 +14,8 @@ function App() {
         <Route path="/category/:categoryId" element={<ItemListContainer />} />
         <Route path="/item/:id" element={<ItemDetailContainer />} />
       </Routes>
+
+      {/* <Checkout /> */}
       
     </div>
   )

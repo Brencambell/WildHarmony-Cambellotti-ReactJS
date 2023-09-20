@@ -7,18 +7,15 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 import App from './App.jsx';
 import './index.css';
 
-//configuracion de firebase. Hay que ponerlo en .env y en .gitignore para no subirlo al repo porque es info privada
 const firebaseConfig = {
-  apiKey: "AIzaSyAPm32OnXiffkzRTDuYAakZWfMCm2Yl3m0",
-  authDomain: "wild-harmony.firebaseapp.com",
-  projectId: "wild-harmony",
-  storageBucket: "wild-harmony.appspot.com",
-  messagingSenderId: "43294573666",
-  appId: "1:43294573666:web:cc4a01e232d29bea85fd3b"
+  apiKey: import.meta.env.VITE_FIRESTORE_API_KEY,
+  authDomain: import.meta.env.VITE_FIRESTORE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIRESTORE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIRESTORE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIRESTORE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIRESTORE_APP_ID,
 };
 
-//inicializacion de firebase
-//const app = initializeApp(firebaseConfig); aca por defaultlo guarda en una constante poer nosotros no necesitamos
 initializeApp(firebaseConfig);
 
 ReactDOM.createRoot(document.getElementById('root')).render(

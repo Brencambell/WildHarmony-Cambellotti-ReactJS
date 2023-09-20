@@ -26,10 +26,10 @@ const ItemList = ({ items, isLoading }) => {
                 alt={item.name}
               />
               <div className="card-body">
-                <h4 className="card-title">{item.name}</h4>
+                <h4 className="card-title">{item.title}</h4>
                 <p className="card-text">{item.description}</p>
                 <p className="card-text">€{item.price}</p>
-                <p className="card-text">{item.category}</p>
+                <p className="card-text">{item.categoryId}</p>
               </div>
             </div>
           </Link>
