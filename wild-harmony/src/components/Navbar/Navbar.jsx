@@ -17,10 +17,10 @@ const Navbar = () => {
                         <NavLink to="/category/maquillaje" className="nav-link">Maquillaje</NavLink>
                     </li>
                     <li className="nav-item">
-                        <NavLink to="/category/cuidado facial" className="nav-link">Cuidado Facial</NavLink>
+                        <NavLink to="/category/cuidado-facial" className="nav-link">Cuidado Facial</NavLink>
                     </li>
                     <li className="nav-item">
-                        <NavLink to="/category/cuidado corporal" className="nav-link">Cuidado Corporal</NavLink>
+                        <NavLink to="/category/cuidado-corporal" className="nav-link">Cuidado Corporal</NavLink>
                     </li>
                 </ul>
 
