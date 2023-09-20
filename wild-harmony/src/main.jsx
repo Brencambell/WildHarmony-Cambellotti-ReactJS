@@ -7,7 +7,7 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 import App from './App.jsx';
 import './index.css';
 
-//configuracion de firebase
+//configuracion de firebase. Hay que ponerlo en .env y en .gitignore para no subirlo al repo porque es info privada
 const firebaseConfig = {
   apiKey: "AIzaSyAPm32OnXiffkzRTDuYAakZWfMCm2Yl3m0",
   authDomain: "wild-harmony.firebaseapp.com",
