@@ -21,9 +21,9 @@ const ItemList = ({ items, isLoading }) => {
           <Link to={`/item/${item.id}`} style={{ textDecoration: 'none' }}>
             <div className="card">
               <img
-                src={`https://picsum.photos/400/300?random=${item.id}`}
+                src={`../src/assets/img/${item.imageId}`}
                 className="card-img-top img-fluid"
-                alt={item.name}
+                alt={item.title}
               />
               <div className="card-body">
                 <h4 className="card-title">{item.title}</h4>
