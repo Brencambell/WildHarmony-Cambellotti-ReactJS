@@ -2,7 +2,12 @@ import { useState } from "react";
 import CartContext from "./CartContext";
 
 const CartProvider = ({ children }) => {
-    const [cart, setCart] = useState([]);
+    const [cart, setCart] = useState([
+        {
+            id: 1,
+            quantity: 47,
+        },
+    ]);
 
     const isInCart = (id) => {
         const itemInCart = cart.find((item) => item.id === id);

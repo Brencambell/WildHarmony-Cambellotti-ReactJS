@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import ItemCountContainer from "../ItemCountContainer/ItemCountContainer";
+import ItemCount from "../ItemCount/ItemCount";
 
 const ItemDetail = ({ item, isLoading }) => {
   if (isLoading) {
@@ -28,7 +28,7 @@ const ItemDetail = ({ item, isLoading }) => {
             <p className="card-text">{item.categoryId}</p>
             <p className="card-text">€{item.price}</p>
             <p className="card-text">Stock: {item.stock}</p>
-            <ItemCountContainer stock={item.stock} />
+            <ItemCount stock={item.stock} />
           </div>
         </div>
       </div>
