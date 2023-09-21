@@ -5,7 +5,7 @@ import styles from "./Navbar.module.css";
 
 const Navbar = () => {
     return (
-        <nav className= {`${styles.customNavbar} navbar navbar-expand-lg bg-body-tertiary p-3`}>
+        <nav className= {`${styles.customNavbar} navbar navbar-expand-lg bg-body-tertiary p-3 fixed-top`}>
             <div className="container-fluid">
                 {/* Brand */}
                 <div className="navbar-brand">
