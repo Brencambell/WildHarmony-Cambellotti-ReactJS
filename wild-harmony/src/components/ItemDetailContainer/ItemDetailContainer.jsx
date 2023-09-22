@@ -8,7 +8,6 @@ const ItemDetailContainer = () => {
   const [isLoading, setIsLoading] = useState (true);
   const { id } = useParams ();
 
-
   useEffect (() => {
     getProduct (id)
     .then ((response) => {
@@ -23,7 +22,7 @@ const ItemDetailContainer = () => {
   }, [id]);
 
 
-  return <ItemDetail item={item} isLoading={isLoading} />; 
+  return <ItemDetail item={item} isLoading={isLoading} />
 };
 
 export default ItemDetailContainer

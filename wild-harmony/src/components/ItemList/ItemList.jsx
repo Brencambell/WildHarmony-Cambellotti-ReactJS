@@ -1,7 +1,5 @@
-//en este contenedor de presentacion va a estar el listado de productos 
 import propTypes from "prop-types";
 import { Link } from 'react-router-dom'
-//import styles from "./ItemList.module.css";
 
 const ItemList = ({ items, isLoading }) => {
   if (isLoading) {
@@ -14,7 +12,6 @@ const ItemList = ({ items, isLoading }) => {
 
   return (
     <div className= "row row-cols-1 row-cols-lg-4 m-3">
-      {/* <h1 className="col-12 mb-4">ItemList</h1> */}
 
       {items.map((item) => (
         <div key={item.id} className="col-md-4 mb-4">
@@ -30,6 +27,7 @@ const ItemList = ({ items, isLoading }) => {
                 <p className="card-text">{item.description}</p>
                 <p className="card-text">€{item.price}</p>
                 <p className="card-text">{item.categoryId}</p>
+                <button className="btn btn-outline-danger mt-2"> See more </button>
               </div>
             </div>
           </Link>
