@@ -47,3 +47,9 @@ import { doc, getDoc, collection, getDocs, query, where, getFirestore } from "fi
       });
     });
   };
+
+  export const createOrder = (order) => {
+    const db = getFirestore();
+    const ordersCollection = collection(db, "orders");
+    return addDoc(ordersCollection, order)
+  };
