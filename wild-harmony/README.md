@@ -38,7 +38,7 @@ This project use some of this technologies:
  - Firebase
 
 ## Testing video
-
+https://github.com/Brencambell/WildHarmony-Cambellotti-ReactJS/blob/main/wild-harmony/src/assets/wild-harmony-testing.mov
 
 ## License 
 
