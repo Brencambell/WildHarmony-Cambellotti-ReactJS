@@ -96,7 +96,7 @@ const Checkout = () => {
                 <hr />
               </div>
             ))}
-            <h4 className="m-3">Total de la compra: ${total}</h4>
+            <h4 className="m-3">Total: ${total}</h4>
           </div>
         
           <br />
@@ -113,7 +113,7 @@ const Checkout = () => {
                 type="submit"
                 onClick={handleCheckout}
               >
-                Finalizar compra
+                Finish
               </button>
             </form>
           </div>
