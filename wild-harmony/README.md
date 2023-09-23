@@ -19,12 +19,12 @@ To install and run the app, follow the next steps:
  5. Click on the localhost link and you are ready to navigate the site 💻
 
  6. To ensure proper functionality, it is essential that you configure the environment variables specified in the .env file.
- `VITE_FIRESTORE_API_KEY
-VITE_FIRESTORE_AUTH_DOMAIN
-VITE_FIRESTORE_PROJECT_ID
-VITE_FIRESTORE_STORAGE_BUCKET 
-VITE_FIRESTORE_MESSAGING_SENDER_ID
-VITE_FIRESTORE_APP_ID`
+ `VITE_FIRESTORE_API_KEY`
+ `VITE_FIRESTORE_AUTH_DOMAIN`
+ `VITE_FIRESTORE_PROJECT_ID`
+ `VITE_FIRESTORE_STORAGE_BUCKET`
+ `VITE_FIRESTORE_MESSAGING_SENDER_ID`
+ `VITE_FIRESTORE_APP_ID`
 
  ## Tecnologies 
 
