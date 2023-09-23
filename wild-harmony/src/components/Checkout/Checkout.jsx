@@ -101,12 +101,12 @@ const Checkout = () => {
         
           <br />
 
-          <div>
+          <div className="container">
             <h4>Complete the form to finish</h4>
-            <form className="form-control" onSubmit={onSubmit}>
-              <Field label="Nombre " name="name" onChange={onChange} />
-              <Field label="Telefono " name="phone" onChange={onChange} />
-              <Field label="Email " name="email" onChange={onChange} />
+            <form className="form-control m-3 p-3" onSubmit={onSubmit}>
+              <Field label="Name: " name="name" onChange={onChange} />
+              <Field label="Phone: " name="phone" onChange={onChange} />
+              <Field label="Email: " name="email" onChange={onChange} />
               <button
                 className= "btn mt-4 btn-danger"
                 disabled={!isFormValid}

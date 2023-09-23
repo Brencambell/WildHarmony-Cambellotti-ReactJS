@@ -1,7 +1,8 @@
 const Field = ({ label, name, onChange }) => {
+  
   return (
     <div>
-      <label>{label}</label>
+      <label className="m-2">{label}</label>
       <input
         type="text"
         name={name}
