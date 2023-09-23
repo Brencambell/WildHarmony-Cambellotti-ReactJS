@@ -37,6 +37,8 @@ This project use some of this technologies:
  - Bootstrap
  - Firebase
 
+## Testing video
+
 
 ## License 
 
