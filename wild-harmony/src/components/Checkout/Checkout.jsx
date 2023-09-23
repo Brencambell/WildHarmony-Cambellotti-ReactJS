@@ -3,25 +3,17 @@ import { CartContext } from "../../context/CartContext";
 import { createOrder } from "../../services";
 import { doc, getFirestore, updateDoc, serverTimestamp  } from "firebase/firestore";
 import Field from "../Field/Field";
+import { Link } from "react-router-dom";
 
 
 const Checkout = () => {
   const { cart, total, clearCart } = useContext(CartContext);
   const [orderId, setOrderId] = useState(null);
-  const [isLoading, setIsLoading] = useState(false);
   const [formState, setFormState] = useState({
     name: "",
     phone: "",
     email: "",
   });
-
-  if (isLoading) {
-    return (
-      <div className="loader">
-        <PacmanLoader color="#ffc107" size={50} />
-      </div>
-    );
-  }
 
   const cartOrder = (cart) => {
     return cart.map((item) => ({
@@ -56,10 +48,8 @@ const Checkout = () => {
       total,
       date: serverTimestamp(),
     };
-    setIsLoading(true);
     createOrder(order).then((docRef) => {
       setOrderId(docRef.id);
-      setIsLoading(false);
       updateStock(cart);
       clearCart();
     });
@@ -73,12 +63,10 @@ const Checkout = () => {
   return (
     <div className="container">
       {orderId && (
-        <div className="container p-5">
-          <p>
-            Thank for trust on us {name}!. Your order ID is:
-            <br />
-            <span>{orderId}</span>
-          </p>
+        <div className="p-5 text-center">
+          <h4>Thank for trust on us {name}!</h4> 
+          <h4>Your order ID is: {orderId} </h4>
+          <Link to='/' className="btn btn-outline-danger mt-2">Go back to home</Link>
         </div>
       )}
       {!orderId && (

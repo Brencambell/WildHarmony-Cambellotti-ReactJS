@@ -1,4 +1,4 @@
-import { doc, getDoc, collection, getDocs, query, where, getFirestore } from "firebase/firestore";
+import { doc, getDoc, addDoc, collection, getDocs, query, where, getFirestore } from "firebase/firestore";
  
   //afecta a itemdetail 
   export const getProduct = (id) => {
